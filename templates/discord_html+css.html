@@ -6,11 +6,11 @@
         <h4 class="greymdfk">Nous sommes si heureux de te revoir !</h4>
         
           <div class="login-box-content">
-            <label class="greymdfk" for="email"><b>E-MAIL OU NUMÉRO DE TÉLÉPHONE       </b></label>
-            <input type="text" id="email" name="email" autocomplete="off"/>
-            <label class="greymdfk" for="password"><b>MOT DE PASSE</b></label>
-            <input type="password" id="password" name="password" />
-            <p><a class="register" href="#">Tu as oublié ton mot de passe ?        </a></p>
+            <f><label class="greymdfk" for="email"><b>E-MAIL OU NUMÉRO DE TÉLÉPHONE</b></label></f>
+            <f><input type="text" id="email" name="email" autocomplete="off"/></f>
+            <f><label class="greymdfk" for="password"><b>MOT DE PASSE</b></label></f>
+            <f><input type="password" id="password" name="password" /></f>
+            <p><a class="register" href="#">Tu as oublié ton mot de passe ?</a></p>
             <button type="submit">Se connecter</button>
           </div>
 
@@ -70,6 +70,12 @@
     margin-left: 20px;
     margin-bottom: 10px;
   }
+
+  label, f {
+    align-self: start;
+    margin-left: -50px;
+    margin-bottom: 10px;
+  }
   
   .login-box-content {
     height: 100%;
@@ -80,7 +86,8 @@
   }
   
   #email, #password {
-    width: 90%;
+    width: 300%;
+    margin-left: -50px;
     margin-bottom: 10px;
   }
   
