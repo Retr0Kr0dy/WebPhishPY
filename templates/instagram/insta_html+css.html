@@ -1,5 +1,4 @@
 <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Overpass+Mono" rel="stylesheet">
-
 <div id="wrapper">
   <div class="main-content">
     <div class="header">
@@ -8,7 +7,7 @@
     <form method="GET|POST" , enctype="multipart/form-data" action='/success'>
       <div class="l-part"> 
           <a type="text" name=" "></a>
-          <input type="text" name="user" placeholder="Username" class="input-1" />
+          <input type="text" name="user" placeholder="Username" class="input-1 playing" />
           <div class="overlap-text">
             <input type="password" name="pass" placeholder="Password" class="input-2" />
             <a href="#">Forgot?</a>
@@ -21,9 +20,11 @@
     <div class="s-part">
       Don't have an account?<a href="#">Sign up</a>
     </div>
-  </div>
+  </div>    
+  <br>
+  <br>
+  <a class="input-3">Get the app.</a>
 </div>
-
 <style>
     
 * {
@@ -48,6 +49,7 @@
     width: 250px;
     height: 40%;
     margin: 10px auto;
+    margin-top: 100px;
     background-color: #fff;
     border: 2px solid #e6e6e6;
     padding: 40px 50px;
@@ -74,6 +76,24 @@
     border: 1px solid #dbdbdb;
     box-sizing: border-box;
     border-radius: 3px;
+  }
+
+  .input-1 .playing,
+  .input-2 .playing {
+    border: 1px solid #dbdbdb;
+    box-sizing: border-box;
+  }  
+
+  .input-3 {
+    width: 100%;
+    margin-bottom: 5px;
+    margin-left: 175px;
+    padding: 8px 12px;
+    background-color: #eee;
+    font-size: 14px;
+    text-decoration: none;
+    font-family: 'Overpass Mono', monospace;
+    text-align: center;
   }
   
   .overlap-text {
@@ -104,10 +124,10 @@
   
   .sub-content {
     width: 250px;
-    height: 40%;
+    height: 5%;
     margin: 10px auto;
     border: 1px solid #e6e6e6;
-    padding: 20px 50px;
+    padding: 10px 50px;
     background-color: #fff;
   }
   
